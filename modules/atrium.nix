@@ -1,4 +1,4 @@
-# Atrium: a polished, mouse-first KDE Plasma desktop on the FyxOS base.
+# Atrium: a polished, mouse-first KDE Plasma desktop on the Omnix base.
 #
 # Defaults are system-wide (/etc/xdg and a look-and-feel package), KDE's own
 # mechanism for distribution defaults: every user starts with them, and
@@ -6,14 +6,14 @@
 { config, lib, pkgs, ... }:
 let
   lookAndFeel = pkgs.runCommand "atrium-look-and-feel" { } ''
-    dir=$out/share/plasma/look-and-feel/org.fyxos.atrium.desktop
+    dir=$out/share/plasma/look-and-feel/org.omnix.atrium.desktop
     mkdir -p $dir
     cp -r ${../lookandfeel}/. $dir/
   '';
 in
 {
   # Desktop apps, Electron and browser downloads need the GUI libraries.
-  fyx.fhs.presets.desktop = true;
+  omnix.fhs.presets.desktop = true;
 
   services.displayManager.sddm = {
     enable = true;
@@ -58,7 +58,7 @@ in
   environment.etc = {
     "xdg/kdeglobals".text = ''
       [KDE]
-      LookAndFeelPackage=org.fyxos.atrium.desktop
+      LookAndFeelPackage=org.omnix.atrium.desktop
 
       [General]
       font=Inter,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1

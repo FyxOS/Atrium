@@ -1,15 +1,15 @@
 {
-  description = "Atrium: a polished, mouse-first KDE Plasma flavor for FyxOS";
+  description = "Atrium: a polished, mouse-first KDE Plasma flavor for Omnix";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    fyxos = {
-      url = "github:FyxOS/FyxOS";
+    omnix = {
+      url = "github:Omnix-Linux/Omnix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, fyxos }:
+  outputs = { self, nixpkgs, omnix }:
     let
       system = "x86_64-linux";
     in
@@ -18,7 +18,7 @@
 
       checks.${system}.desktop = import ./tests/desktop.nix {
         pkgs = nixpkgs.legacyPackages.${system};
-        modules = [ fyxos.nixosModules.default self.nixosModules.default ];
+        modules = [ omnix.nixosModules.default self.nixosModules.default ];
       };
     };
 }

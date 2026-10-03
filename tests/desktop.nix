@@ -28,11 +28,11 @@ pkgs.testers.runNixOSTest {
         ).strip()
 
     with subtest("system-wide defaults reach a new user"):
-        assert read("kdeglobals", "KDE", "LookAndFeelPackage") == "org.fyxos.atrium.desktop"
+        assert read("kdeglobals", "KDE", "LookAndFeelPackage") == "org.omnix.atrium.desktop"
         assert read("kcminputrc", "Keyboard", "RepeatDelay") == "250"
         assert read("kwinrc", "Windows", "PerOutputVirtualDesktops") == "true"
 
-    with subtest("the FyxOS base is underneath"):
+    with subtest("the Omnix base is underneath"):
         machine.succeed("test -e /usr/lib/libgtk-3.so.0")
 
     machine.sleep(20)
