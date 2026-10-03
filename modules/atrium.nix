@@ -30,6 +30,14 @@ in
   services.printing.enable = true;
   hardware.bluetooth.enable = true;
 
+  # On NVIDIA (set by the installer when it finds one): grow BAR1 past 256 MiB.
+  # Wayland maps every CPU-visible surface through it, and at 256 MiB bursts
+  # fragment it and crash browser tabs (NVIDIA bug 5762513, unfixed through
+  # 610). Takes effect only with "Above 4G Decoding" enabled in the BIOS.
+  hardware.nvidia.moduleParams.nvidia = lib.mkIf
+    (lib.elem "nvidia" config.services.xserver.videoDrivers)
+    { NVreg_EnableResizableBar = lib.mkDefault 1; };
+
   programs.firefox.enable = true;
   environment.systemPackages = [
     lookAndFeel
