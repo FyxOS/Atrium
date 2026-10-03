@@ -1,0 +1,48 @@
+{
+  "nodes": {
+    "fyxos": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1790983511,
+        "narHash": "sha256-sOBAad1dzhgnDIBFR64jwIP1VDo+6/lGSeEVu/1m6Fc=",
+        "owner": "FyxOS",
+        "repo": "FyxOS",
+        "rev": "80f24a5160496a36576e263997af49bc7e51820d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FyxOS",
+        "repo": "FyxOS",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1790822859,
+        "narHash": "sha256-69xHQhAeMAD2wDXO7T2pcOZIF9Sga2W+JkmY2a11Ops=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "fyxos": "fyxos",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

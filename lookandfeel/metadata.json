@@ -1,0 +1,11 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [ { "Name": "FyxOS" } ],
+        "Description": "Atrium: polished windows, mouse-first",
+        "Id": "org.fyxos.atrium.desktop",
+        "License": "MIT",
+        "Name": "Atrium",
+        "Version": "1"
+    }
+}

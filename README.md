@@ -34,6 +34,17 @@ inputs.flavor = {
 
 ## Status
 
-**Planning.** Atrium is being written from scratch for FyxOS. It is tested in VMs and on
-spare disks, and is not yet anyone's daily driver. See the FyxOS
-[roadmap](https://github.com/FyxOS/FyxOS/blob/main/docs/roadmap.md) (Phase 2).
+**First version.** `nixosModules.default` is a KDE Plasma 6.7 desktop on the FyxOS
+base:
+
+- KDE's own mechanism for distribution defaults, so every user starts with
+  Atrium and changes in System Settings stay theirs:
+  - system-wide `/etc/xdg` settings (Atrium look-and-feel, 250 ms / 50 Hz key
+    repeat, per-screen virtual desktops, Overview shortcuts);
+  - a look-and-feel package whose layout gives a slim top bar and a floating
+    bottom dock.
+- The FyxOS desktop library preset, PipeWire, printing, Bluetooth, Firefox and
+  fonts (Inter, Noto, JetBrains Mono Nerd).
+
+`nix flake check` boots it in a VM. It checks that the defaults reach a new
+user, and takes a screenshot.
