@@ -1,4 +1,4 @@
-# Boots Atrium to a Plasma session and checks the distribution defaults reach
+# Boots KDE Plasma - Atrium to a Plasma session and checks the distribution defaults reach
 # a new user: look-and-feel, key repeat and per-screen virtual desktops.
 { pkgs, modules }:
 pkgs.testers.runNixOSTest {

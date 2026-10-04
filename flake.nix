@@ -1,5 +1,5 @@
 {
-  description = "Atrium: a polished, mouse-first KDE Plasma flavor for Omnix";
+  description = "KDE Plasma - Atrium: a polished, mouse-first KDE Plasma flavor for Omnix";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
