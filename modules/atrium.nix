@@ -1,4 +1,4 @@
-# Atrium: a polished, mouse-first KDE Plasma desktop on the Omnix base.
+# KDE Plasma - Atrium: a polished, mouse-first KDE Plasma desktop on the Omnix base.
 #
 # Defaults are system-wide (/etc/xdg and a look-and-feel package), KDE's own
 # mechanism for distribution defaults: every user starts with them, and

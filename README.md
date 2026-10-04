@@ -1,14 +1,14 @@
-# Atrium
+# KDE Plasma - Atrium
 
 **A polished, mouse-first KDE Plasma desktop. A flavor for [Omnix](https://github.com/Omnix-Linux/Omnix).**
 
-Atrium is for people who like windows, a taskbar, and a mouse, and who want them done
+KDE Plasma - Atrium is for people who like windows, a taskbar, and a mouse, and who want them done
 well. It is a curated KDE Plasma 6 desktop with a clean panel, sensible shortcuts,
 per-screen virtual desktops, and the apps a workstation needs. Because the Omnix base
 supplies the standard Linux library layout, prebuilt software such as Electron apps,
 browsers for Playwright, AppImages and vendor tools runs without workarounds.
 
-Pick **Atrium** in the Omnix installer, or add it to an existing Omnix machine flake:
+Pick **KDE Plasma - Atrium** in the Omnix installer, or add it to an existing Omnix machine flake:
 
 ```nix
 inputs.flavor = {
@@ -18,6 +18,8 @@ inputs.flavor = {
 };
 # modules = [ omnix.nixosModules.default flavor.nixosModules.default ... ];
 ```
+
+Desktop labels follow the [Omnix naming policy](https://github.com/Omnix-Linux/Omnix/blob/main/docs/naming.md).
 
 ## Principles
 
@@ -38,8 +40,8 @@ inputs.flavor = {
 base:
 
 - KDE's own mechanism for distribution defaults, so every user starts with
-  Atrium and changes in System Settings stay theirs:
-  - system-wide `/etc/xdg` settings (Atrium look-and-feel, 250 ms / 50 Hz key
+  KDE Plasma - Atrium and changes in System Settings stay theirs:
+  - system-wide `/etc/xdg` settings (KDE Plasma - Atrium look-and-feel, 250 ms / 50 Hz key
     repeat, per-screen virtual desktops, Overview shortcuts);
   - a look-and-feel package whose layout gives a slim top bar and a floating
     bottom dock.

@@ -1,4 +1,4 @@
-// Atrium's first-login layout: a slim top bar and a floating bottom dock.
+// KDE Plasma - Atrium's first-login layout: a slim top bar and a floating bottom dock.
 // Plasma runs this once per new user; anything they change afterwards is theirs.
 
 var top = new Panel;
