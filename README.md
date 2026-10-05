@@ -1,3 +1,5 @@
+<img src=".github/assets/icon.png" alt="" width="96">
+
 # KDE Plasma - Atrium
 
 **A polished, mouse-first KDE Plasma desktop. A flavor for [Omnix](https://github.com/Omnix-Linux/Omnix).**
